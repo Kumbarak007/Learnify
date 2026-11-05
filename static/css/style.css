@@ -1,0 +1,295 @@
+/* ---------- Global ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+/* ---------- Main Container ---------- */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+/* ---------- Hero Section ---------- */
+
+.hero {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.hero h1 {
+    font-size: 2.7rem;
+    margin-bottom: 10px;
+    color: #2563eb;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ---------- Input Card ---------- */
+
+.input-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* ---------- Inputs ---------- */
+
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 14px;
+
+    font-size: 16px;
+
+    border: 1px solid #d9d9d9;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+select:focus,
+textarea:focus {
+
+    border-color: #2563eb;
+}
+
+/* ---------- Text Area ---------- */
+
+textarea {
+
+    resize: vertical;
+
+    min-height: 140px;
+}
+
+/* ---------- Button ---------- */
+
+button {
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px;
+
+    font-size: 16px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+button:hover {
+
+    background: #1d4ed8;
+}
+
+/* ---------- Result Section ---------- */
+
+#result {
+
+    margin-top: 35px;
+}
+
+/* ---------- AI Result Card ---------- */
+
+.result-card{
+
+    margin-top:20px;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
+
+}
+
+/* ---------- Individual Sections ---------- */
+
+.section{
+
+    margin-bottom:30px;
+
+    padding-bottom:20px;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.section:last-child{
+
+    border-bottom:none;
+
+    margin-bottom:0;
+
+}
+
+.section h2{
+
+    color:#2563eb;
+
+    margin-bottom:12px;
+
+    font-size:1.2rem;
+
+}
+
+.section p{
+
+    line-height:1.8;
+
+    color:#444;
+
+}
+
+.section ul{
+
+    margin-left:20px;
+
+}
+
+.section li{
+
+    margin-bottom:10px;
+
+}
+/* ---------- Loading Card ---------- */
+
+.loading-card{
+
+    background:white;
+
+    margin-top:25px;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
+
+}
+
+.loading-card h3{
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+}
+
+.loading-card p{
+
+    color:#666;
+
+}
+
+/* ---------- Disabled Button ---------- */
+
+button:disabled{
+
+    opacity:.7;
+
+    cursor:not-allowed;
+
+}
+/* ========================= */
+/* Quiz */
+/* ========================= */
+
+.options{
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin:25px 0;
+
+}
+
+.option{
+
+    display:flex;
+    align-items:center;
+
+    padding:15px;
+
+    border:1px solid #dcdcdc;
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.option:hover{
+
+    background:#f4f8ff;
+
+}
+
+.option input{
+
+    margin-right:12px;
+
+}
+
+#nextBtn,
+#reviewBtn{
+
+    margin-top:25px;
+    width:100%;
+
+}
+
+/* Navigation */
+
+.nav-bar{
+
+    display:flex;
+    gap:12px;
+
+    margin:25px 0;
+
+}
+
+.nav-bar button{
+
+    flex:1;
+
+}

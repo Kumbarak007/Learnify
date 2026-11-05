@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ConceptCraft</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Hero Section -->
+        <div class="hero">
+
+            <h1>Learnify</h1>
+
+            <p>
+                Transform any concept into clear explanations, analogies,
+                diagrams and smart study notes.
+            </p>
+
+        </div>
+
+        <!-- Input Section -->
+        <div class="input-card">
+
+            <select id="subject">
+                <option value="General">General</option>
+                <option>Programming</option>
+                <option>Science</option>
+                <option>Mathematics</option>
+                <option>History</option>
+                <option>Geography</option>
+            </select>
+
+            <select id="grade">
+                <option>School</option>
+                <option>High School</option>
+                <option>College</option>
+                <option>Professional</option>
+            </select>
+
+            <textarea
+                id="concept"
+                rows="5"
+                placeholder="Ask any question..."></textarea>
+
+            <button id="explainBtn">
+                Explain
+            </button>
+
+        </div>
+
+        <!-- Output Section -->
+        
+<div id="result"></div>
+
+<div id="chatBox" style="display:none; margin-top:20px;">
+
+    <div class="result-card">
+
+        <h2>💬 Ask Follow-up</h2>
+
+        <textarea
+            id="chatQuestion"
+            rows="3"
+            placeholder="Ask anything about this concept...">
+        </textarea>
+
+        <button id="askChatBtn">
+            Ask AI
+        </button>
+
+        <div id="chatResponse"></div>
+        <div style="margin-top:20px;">
+
+    <button id="backFromChatBtn">
+        ← Back to Explanation
+    </button>
+
+</div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+
+</html>
